@@ -10,6 +10,7 @@
 
 .Header {
   width: 30%;
+  padding-bottom: 10px;
 }
 
 .Todos {
@@ -17,4 +18,47 @@
   text-align: left;
   font-size: smaller;
   font-family: Helvetica;
+}
+
+.form-container {
+  padding: 10px;
+  padding-right: 5%;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+}
+
+.text-input {
+  flex: 10;
+  padding: 5px;
+}
+
+.btn {
+  flex: 1;
+  background: #596a8b;
+  color: white;
+  padding: 4px;
+  border: none;
+}
+
+@media screen and (max-width: 400px) {
+  .App{
+    flex-direction: column;
+  }
+  .Header {
+    width: 100%;
+  }
+  .Todos {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: lavender;
+  }
 }
